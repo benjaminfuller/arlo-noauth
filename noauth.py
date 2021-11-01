@@ -17,7 +17,7 @@ def authorize():
     redirect_uri = request.args["redirect_uri"]
     state = request.args["state"]
     return f"""
-<h1>no-Auth does not actual authentication.  Please do not rely on this service for authentication in practice.</h1>
+<h1>no-Auth does not actually authenticate users.  Please do not rely on this service for authentication in practice.</h1>
 <br><br>
 <form method="post" action="">
 <input type="hidden" name="state" value="{state}">
